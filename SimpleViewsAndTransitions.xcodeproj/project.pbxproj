@@ -11,6 +11,14 @@
 		1FE817CC25B600ED003C70EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE817CB25B600ED003C70EA /* ContentView.swift */; };
 		1FE817CE25B600EF003C70EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FE817CD25B600EF003C70EA /* Assets.xcassets */; };
 		1FE817D125B600EF003C70EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FE817D025B600EF003C70EA /* Preview Assets.xcassets */; };
+		1FE817DB25B60528003C70EA /* hikeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 1FE817DA25B60528003C70EA /* hikeData.json */; };
+		1FE817DF25B6055B003C70EA /* Hike.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE817DE25B6055B003C70EA /* Hike.swift */; };
+		1FE817E225B6074E003C70EA /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE817E125B6074E003C70EA /* ModelData.swift */; };
+		1FE817E525B6080C003C70EA /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE817E425B6080C003C70EA /* Landmark.swift */; };
+		1FE817E825B6081F003C70EA /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = 1FE817E725B6081F003C70EA /* landmarkData.json */; };
+		1FE817F125B609F8003C70EA /* GraphCapsule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE817F025B609F8003C70EA /* GraphCapsule.swift */; };
+		1FE817F225B609F8003C70EA /* HikeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE817EF25B609F8003C70EA /* HikeDetail.swift */; };
+		1FE817F325B609F8003C70EA /* HikeGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE817EE25B609F8003C70EA /* HikeGraph.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +28,14 @@
 		1FE817CD25B600EF003C70EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1FE817D025B600EF003C70EA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1FE817D225B600EF003C70EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FE817DA25B60528003C70EA /* hikeData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hikeData.json; sourceTree = "<group>"; };
+		1FE817DE25B6055B003C70EA /* Hike.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hike.swift; sourceTree = "<group>"; };
+		1FE817E125B6074E003C70EA /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		1FE817E425B6080C003C70EA /* Landmark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
+		1FE817E725B6081F003C70EA /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
+		1FE817EE25B609F8003C70EA /* HikeGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeGraph.swift; sourceTree = "<group>"; };
+		1FE817EF25B609F8003C70EA /* HikeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeDetail.swift; sourceTree = "<group>"; };
+		1FE817F025B609F8003C70EA /* GraphCapsule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphCapsule.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +68,12 @@
 		1FE817C825B600ED003C70EA /* SimpleViewsAndTransitions */ = {
 			isa = PBXGroup;
 			children = (
+				1FE817F025B609F8003C70EA /* GraphCapsule.swift */,
+				1FE817EF25B609F8003C70EA /* HikeDetail.swift */,
+				1FE817EE25B609F8003C70EA /* HikeGraph.swift */,
+				1FE817EA25B60864003C70EA /* Views */,
+				1FE817DD25B60539003C70EA /* Model */,
+				1FE817D925B6050A003C70EA /* Resources */,
 				1FE817C925B600ED003C70EA /* SimpleViewsAndTransitionsApp.swift */,
 				1FE817CB25B600ED003C70EA /* ContentView.swift */,
 				1FE817CD25B600EF003C70EA /* Assets.xcassets */,
@@ -67,6 +89,32 @@
 				1FE817D025B600EF003C70EA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1FE817D925B6050A003C70EA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1FE817E725B6081F003C70EA /* landmarkData.json */,
+				1FE817DA25B60528003C70EA /* hikeData.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1FE817DD25B60539003C70EA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1FE817DE25B6055B003C70EA /* Hike.swift */,
+				1FE817E125B6074E003C70EA /* ModelData.swift */,
+				1FE817E425B6080C003C70EA /* Landmark.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1FE817EA25B60864003C70EA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +175,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FE817D125B600EF003C70EA /* Preview Assets.xcassets in Resources */,
+				1FE817E825B6081F003C70EA /* landmarkData.json in Resources */,
+				1FE817DB25B60528003C70EA /* hikeData.json in Resources */,
 				1FE817CE25B600EF003C70EA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,8 +188,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FE817DF25B6055B003C70EA /* Hike.swift in Sources */,
+				1FE817E225B6074E003C70EA /* ModelData.swift in Sources */,
+				1FE817F125B609F8003C70EA /* GraphCapsule.swift in Sources */,
 				1FE817CC25B600ED003C70EA /* ContentView.swift in Sources */,
+				1FE817F225B609F8003C70EA /* HikeDetail.swift in Sources */,
+				1FE817F325B609F8003C70EA /* HikeGraph.swift in Sources */,
 				1FE817CA25B600ED003C70EA /* SimpleViewsAndTransitionsApp.swift in Sources */,
+				1FE817E525B6080C003C70EA /* Landmark.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
